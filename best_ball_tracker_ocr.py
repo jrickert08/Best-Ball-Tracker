@@ -14,24 +14,7 @@ if "drafts" not in st.session_state:
     st.session_state.drafts = []
 
 # Player metadata
-player_db = {
-    "J. Herbert": {"team": "LAC", "pos": "QB", "bye": 12},
-    "J. Coker": {"team": "CAR", "pos": "WR", "bye": 14},
-    "D. Wicks": {"team": "GB", "pos": "WR", "bye": 5},
-    "T. Atwell": {"team": "LAR", "pos": "WR", "bye": 8},
-    "A. Barner": {"team": "SEA", "pos": "TE", "bye": 8},
-    "C. Lamb": {"team": "DAL", "pos": "WR", "bye": 10},
-    "R. Rice": {"team": "KC", "pos": "WR", "bye": 10},
-    "X. Worthy": {"team": "KC", "pos": "WR", "bye": 10},
-    "K. Walker III": {"team": "SEA", "pos": "RB", "bye": 8},
-    "B. Bowers": {"team": "LV", "pos": "TE", "bye": 8},
-    "D. Prescott": {"team": "DAL", "pos": "QB", "bye": 10},
-    "A. Ekeler": {"team": "WAS", "pos": "RB", "bye": 12},
-    "Q. Johnston": {"team": "LAC", "pos": "WR", "bye": 12},
-    "R. Shaheed": {"team": "NO", "pos": "WR", "bye": 11},
-    "J. Milroe": {"team": "SEA", "pos": "QB", "bye": 8},
-    "R. Wilson": {"team": "PIT", "pos": "WR", "bye": 5},
-}
+from player_db import player_db
 
 
 

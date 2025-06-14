@@ -14,31 +14,26 @@ if "drafts" not in st.session_state:
     st.session_state.drafts = []
 
 # Player metadata
-def get_player_db():
-    return {
-        "C. Williams": {"team": "CHI", "pos": "QB", "bye": 5},
-        "K. Walker III": {"team": "SEA", "pos": "RB", "bye": 8},
-        "K. Johnson": {"team": "PIT", "pos": "RB", "bye": 5},
-        "C. Lamb": {"team": "DAL", "pos": "WR", "bye": 10},
-        "R. Rice": {"team": "KC", "pos": "WR", "bye": 10},
-        "X. Worthy": {"team": "KC", "pos": "WR", "bye": 10},
-        "B. Bowers": {"team": "LV", "pos": "TE", "bye": 8},
-        "R. Odunze": {"team": "CHI", "pos": "WR", "bye": 5},
-        "D. Prescott": {"team": "DAL", "pos": "QB", "bye": 10},
-        "L. Burden III": {"team": "CHI", "pos": "WR", "bye": 5},
-        "J. Williams": {"team": "DAL", "pos": "RB", "bye": 10},
-        "J. Ferguson": {"team": "DAL", "pos": "TE", "bye": 10},
-        "R. Shaheed": {"team": "NO", "pos": "WR", "bye": 11},
-        "A. Ekeler": {"team": "WAS", "pos": "RB", "bye": 12},
-        "Q. Johnston": {"team": "LAC", "pos": "WR", "bye": 12},
-        "J. Noel": {"team": "HOU", "pos": "WR", "bye": 6},
-        "W. Shipley": {"team": "PHI", "pos": "RB", "bye": 9},
-        "W. Marks": {"team": "HOU", "pos": "RB", "bye": 6},
-        "J. Milroe": {"team": "SEA", "pos": "QB", "bye": 8},
-        "R. Wilson": {"team": "PIT", "pos": "WR", "bye": 5},
-    }
+player_db = {
+    "J. Herbert": {"team": "LAC", "pos": "QB", "bye": 12},
+    "J. Coker": {"team": "CAR", "pos": "WR", "bye": 14},
+    "D. Wicks": {"team": "GB", "pos": "WR", "bye": 5},
+    "T. Atwell": {"team": "LAR", "pos": "WR", "bye": 8},
+    "A. Barner": {"team": "SEA", "pos": "TE", "bye": 8},
+    "C. Lamb": {"team": "DAL", "pos": "WR", "bye": 10},
+    "R. Rice": {"team": "KC", "pos": "WR", "bye": 10},
+    "X. Worthy": {"team": "KC", "pos": "WR", "bye": 10},
+    "K. Walker III": {"team": "SEA", "pos": "RB", "bye": 8},
+    "B. Bowers": {"team": "LV", "pos": "TE", "bye": 8},
+    "D. Prescott": {"team": "DAL", "pos": "QB", "bye": 10},
+    "A. Ekeler": {"team": "WAS", "pos": "RB", "bye": 12},
+    "Q. Johnston": {"team": "LAC", "pos": "WR", "bye": 12},
+    "R. Shaheed": {"team": "NO", "pos": "WR", "bye": 11},
+    "J. Milroe": {"team": "SEA", "pos": "QB", "bye": 8},
+    "R. Wilson": {"team": "PIT", "pos": "WR", "bye": 5},
+}
 
-player_db = get_player_db()
+
 
 # OCR Upload
 st.header("📸 Upload Screenshot for OCR")

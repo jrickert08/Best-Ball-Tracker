@@ -1,5 +1,5 @@
 
-from player_db import player_db
+from player_db (1) import player_db (1)
 
 import streamlit as st
 import pandas as pd
